@@ -1,7 +1,22 @@
 require_relative 'car'
 
 ferarri = Car.new('red', 'ferarri')
-tesla = Car.new('white', 'tesla')
 
 puts "#{ferarri.brand} is #{ferarri.color}"
-puts "#{tesla.brand} is #{tesla.color}"
+
+puts "we're re-painting it to green"
+
+ferarri.color = "green"
+
+puts "#{ferarri.brand} is now #{ferarri.color}"
+
+ferarri.gas
+ferarri.gas
+ferarri.gas
+ferarri.gas
+ferarri.gas
+ferarri.gas
+
+ferarri.start_engine
+
+puts "engine is on" if ferarri.engine_started?
