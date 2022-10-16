@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class House
+class SkyScraper
   attr_reader :name, :width, :length
 
   def initialize(name, width, length)
@@ -8,10 +8,6 @@ class House
     @width = width
     @length = length
   end
-
-  # def name
-  #   @name
-  # end
 
   def floor_area
     @width * @length
