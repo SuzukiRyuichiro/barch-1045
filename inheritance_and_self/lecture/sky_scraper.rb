@@ -1,15 +1,23 @@
 # frozen_string_literal: true
 
-class SkyScraper
-  attr_reader :name, :width, :length
+require_relative 'building'
 
-  def initialize(name, width, length)
-    @name = name
-    @width = width
-    @length = length
+class SkyScraper < Building
+  def initialize(name, width, length, height)
+    super(name, width, length)
+    @height = height
   end
 
-  def floor_area
-    @width * @length
+  def type_of_tower
+    # return a string based on the height of the tower
+    if @height > 50
+      "#{capitalized_name} is high enough for spider man level super heroes"
+    else
+      "#{capitalized_name} is too heigh for beginner level heroes"
+    end
+  end
+
+  def capitalized_name
+    @name.capitalize
   end
 end

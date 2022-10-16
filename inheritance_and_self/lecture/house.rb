@@ -1,19 +1,6 @@
 # frozen_string_literal: true
 
-class House
-  attr_reader :name, :width, :length
+require_relative 'building'
 
-  def initialize(name, width, length)
-    @name = name
-    @width = width
-    @length = length
-  end
-
-  # def name
-  #   @name
-  # end
-
-  def floor_area
-    @width * @length
-  end
+class House < Building
 end
