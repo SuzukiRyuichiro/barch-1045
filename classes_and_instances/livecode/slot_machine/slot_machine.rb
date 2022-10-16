@@ -1,5 +1,8 @@
 class SlotMachine
+  attr_reader :set
+
   SYMBOLS = %w[cherry seven bell star joker].freeze
+
   # TODO: initialize
   def initialize(set = [])
     @set = set
@@ -17,6 +20,13 @@ class SlotMachine
     else
       # else return 0
       return 0
+    end
+  end
+
+  def play
+    @set = []
+    3.times do
+      @set << SYMBOLS.sample
     end
   end
 
