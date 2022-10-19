@@ -16,7 +16,7 @@ car_2 = Car.new('white', 'suzuki')
 # puts "now car no 1 is #{car.color}"
 
 car.start_engine
-car.pump_fuel
+car.pump_fuel # we don't want this!!!
 car.pump_fuel
 car.pump_fuel
 car.pump_fuel

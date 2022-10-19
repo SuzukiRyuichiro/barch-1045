@@ -9,8 +9,12 @@ class Car
     @cylinder = 0
   end
 
-  # def color=(new_color) # writer method
+  # def color=(new_color) # writer method. equivalent to attr_writer :color
   #   @color = new_color
+  # end
+
+  # def color # reader method. equivalent to attr_reader :color
+  #   @color
   # end
 
   def engine_started?
