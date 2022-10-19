@@ -11,7 +11,7 @@ def test_scenario(scenario, expected_score)
   end
 end
 
-describe 'SlotMachine' do
+describe SlotMachine do
   describe '#score' do
     it 'returns 0 when all the symbols are different' do
       # What is the easiet or simplest result??
