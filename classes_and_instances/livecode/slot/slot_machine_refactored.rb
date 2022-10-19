@@ -29,6 +29,8 @@ class SlotMachine
   end
 
   def play
+    # This is something we couldn't implement today but will basically
+    # it just pushes random symbol three time
     @reels = []
     3.times do
       @reels << SYMBOLS.sample
