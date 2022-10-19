@@ -18,7 +18,7 @@ class SlotMachine
       # We have to know which one is the duplicating symbol
       repeating_symbol = @reels.sort[1] # this is the tricky one. explanation below ↓
       # when you sort two of the same and some other symbol (i.e. ['cherry', 'joker', 'cherry'])
-      # you can see that the repeating symbol will be in the middle all the time
+      # you can see that the repeating symbol will be in the middle all the time if you sort the array ['cherry', 'cherry', 'joker']
       # and because two_of_the_same_and_a_joker? already checked that it includes at least one joker
       # we can just multiply the symbol in the middle by 5
       return (SYMBOLS.index(repeating_symbol) + 1) * 5
