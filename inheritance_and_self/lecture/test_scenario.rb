@@ -16,12 +16,13 @@ death_star = Castle.new('death star', 100000, 100000)
 # puts "#{death_star.name} has a butler? #{death_star.has_a_butler? ? 'Yes' : 'No'}"
 # puts "#{death_star.name}'s butler is #{death_star.butler}"
 
-# p death_star.categories # !=> ['Medieval', 'Norman', 'Ancient']
+# p death_star.categories # !=> ['Medieval', 'Norman', 'Ancient'] not natural
 # p Castle.categories # => ['Medieval', 'Norman', 'Ancient']
 
 # p one_world.type_of_owner
 # p one_world.capitalize_name
 
-castle = Castle.new("white castle", 100, 100)
+castle = Castle.new("white castle", 100, 100) # => this automatically creates a butler in a castle
 
+p castle.butler # => this returns an INSTANCE of a butler.
 p castle.butler.clean_castle
