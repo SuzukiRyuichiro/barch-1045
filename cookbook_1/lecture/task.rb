@@ -1,6 +1,8 @@
 class Task
-  def initialize(title)
-    @title = title
+  attr_reader :description
+
+  def initialize(description)
+    @description = description
     @completed = false
   end
 
