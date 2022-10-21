@@ -31,6 +31,8 @@ controller = Controller.new(repository)
 done = false
 
 until done
+  puts `clear`
+
   puts 'What do you wanna do??'
   puts '1 - add a task'
   puts '2 - list the task'
@@ -48,7 +50,7 @@ until done
   when 3
     controller.mark_done
   when 4
-    controller.remove
+    controller.destroy
   when 9
     done = true
   else

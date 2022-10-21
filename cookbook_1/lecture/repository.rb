@@ -17,7 +17,7 @@ class Repository
     @tasks[index]
   end
 
-  def destroy(index)
+  def remove(index)
     # remove the task at index
     @tasks.delete_at(index)
   end

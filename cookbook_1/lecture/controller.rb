@@ -34,7 +34,7 @@ class Controller # tells views and repos to invoke actionsend
     task.completed!
   end
 
-  def remove
+  def destroy
     # display all the tasks in the todo list
     display_tasks
     # ask the user for which task to delete
