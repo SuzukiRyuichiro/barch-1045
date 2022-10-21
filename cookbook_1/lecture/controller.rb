@@ -1,10 +1,10 @@
 require_relative 'view'
 require_relative 'task'
 
-class Controller # tells views and repos to invoke actionsend
-  def initialize(repository) # expect argument to be an instance of repo
+class Controller # tells views and repos to invoke actions
+  def initialize(repository) # expect argument to be an instance of a repo
     @view = View.new
-    @repository = repository # repository instanc
+    @repository = repository # repository instance
   end
 
   def add_task
@@ -27,7 +27,7 @@ class Controller # tells views and repos to invoke actionsend
     display_tasks
     # ask the user for which task to mark
     index = @view.ask_user_for_index
-    # we update the state of the chosen task
+    # TODO: update the state of the chosen task
     # ask repository to give me a task at index `index`
     task = @repository.find(index)
     # update the state of the task -> done
@@ -35,11 +35,11 @@ class Controller # tells views and repos to invoke actionsend
   end
 
   def destroy
-    # display all the tasks in the todo list
+    # let the user see all the tasks
     display_tasks
     # ask the user for which task to delete
     index = @view.ask_user_for_index
-    # ask the repo to delete the task at given index
+    # tell the repo to delete the task at given index
     @repository.remove(index)
   end
 
