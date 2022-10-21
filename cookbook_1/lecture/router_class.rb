@@ -1,3 +1,9 @@
+# For the sake of transition from test.rb to router.rb
+# I didn't include making the router into a class
+# but we can make a router into a class as well, and use
+# an instance of router to run the app. It is just adding
+# another layer of abstraction
+
 require_relative 'controller'
 
 class Router
