@@ -28,7 +28,7 @@ class Router
       when 9
         done = true
       else
-        puts 'please choose 1, 2 or 3'
+        puts 'please choose 1 to 4 or 9'
       end
     end
   end
