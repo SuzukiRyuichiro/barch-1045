@@ -40,7 +40,7 @@ class Controller # tells views and repos to invoke actionsend
     # ask the user for which task to delete
     index = @view.ask_user_for_index
     # ask the repo to delete the task at given index
-    @repository.destroy(index)
+    @repository.remove(index)
   end
 
   private

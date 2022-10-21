@@ -31,8 +31,6 @@ controller = Controller.new(repository)
 done = false
 
 until done
-  puts `clear`
-
   puts 'What do you wanna do??'
   puts '1 - add a task'
   puts '2 - list the task'
@@ -41,6 +39,7 @@ until done
   puts '9 - quit'
 
   choice = gets.chomp.to_i
+  puts `clear`
 
   case choice
   when 1
