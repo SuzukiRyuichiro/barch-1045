@@ -1,0 +1,10 @@
+<h1>List</h1>
+
+<% @tasks.each_with_index do |task, index| %>
+  <p>
+    <%= task.completed? ? '✅' : '⬜️' %> <%= task.description %>
+    <form action="/completed/<%= index %>" method="post"><input type="submit" value="mark as done"></form>
+  </p>
+<% end %>
+
+<a href="/new">Add a task</a>

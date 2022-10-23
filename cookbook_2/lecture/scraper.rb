@@ -3,6 +3,7 @@ require 'pry-byebug'
 require 'awesome_print'
 require 'open-uri'
 
+doc = URI.open
 doc = File.open('pumpkin.html').read
 
 html = Nokogiri::HTML(doc) # equal to calling Nokogiri::HTML4::Document.parse
