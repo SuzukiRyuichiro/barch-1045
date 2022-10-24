@@ -7,13 +7,14 @@ url = "https://www.bbc.co.uk/food/search?q=#{keyword}"
 
 html = URI.open(url).read # (String)
 
-doc = Nokogiri::HTML(html)
+doc = Nokogiri::HTML(html) # Nokogiri object
 
 recipes = []
 
-doc.search('a.promo').each do |element|
+doc.search('a.promo').each do |element| #
   # get the title
   title_element = element.search('.promo__title')
+  # get the inside text
   name = title_element.inner_text
 
   # get desc
