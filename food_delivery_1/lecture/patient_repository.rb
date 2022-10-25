@@ -11,7 +11,7 @@ class PatientRepository
   end
 
   def add(patient) # expects a patient instance
-    # assign him a unique id
+    # assign him/her a unique id
     patient.id = @next_id
     @patients << patient
     @next_id += 1
