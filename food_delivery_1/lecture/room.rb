@@ -9,7 +9,7 @@ class Room
 
   class FullRoom < Exception; end
 
-  def add(patient) # expects an instance of Patient
+  def add_patient(patient) # expects an instance of Patient
     # before adding, check if the room is full
     if full?
       raise FullRoom, 'oops, too many peeps in the room'

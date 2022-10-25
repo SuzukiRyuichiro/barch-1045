@@ -28,11 +28,11 @@ room_repository = RoomRepository.new('./rooms.csv')
 require_relative './patient_repository'
 patient_repository = PatientRepository.new('./patients.csv', room_repository)
 
-p room_repository
-p patient_repository
+room_repository
+patient_repository
 
-# scooter = Patient.new(name: 'Scooter')
-# ruben = Patient.new(name: 'Ruben')
+scooter = Patient.new(name: 'Scooter')
+ruben = Patient.new(name: 'Ruben')
 
-# patient_repository.add(scooter)
-# patient_repository.add(ruben)
+patient_repository.add(scooter)
+patient_repository.add(ruben)
