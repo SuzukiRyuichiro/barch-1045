@@ -7,8 +7,8 @@
 require_relative 'controller'
 
 class Router
-  def initialize(repository)
-    @controller = Controller.new(repository)
+  def initialize(controller)
+    @controller = controller
   end
 
   def run
