@@ -4,3 +4,6 @@
 [submodule "from-design-to-code-prep"]
 	path = from-design-to-code-prep
 	url = https://github.com/SuzukiRyuichiro/from-design-to-code-prep.git
+[submodule "rails-background-jobs-prep"]
+	path = rails-background-jobs-prep
+	url = https://github.com/SuzukiRyuichiro/rails-background-jobs-prep.git
