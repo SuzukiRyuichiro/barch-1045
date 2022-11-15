@@ -7,3 +7,9 @@
 [submodule "rails-background-jobs-prep"]
 	path = rails-background-jobs-prep
 	url = https://github.com/SuzukiRyuichiro/rails-background-jobs-prep.git
+[submodule "rails-db-advanced-prep"]
+	path = rails-db-advanced-prep
+	url = https://github.com/SuzukiRyuichiro/rails-db-advanced-prep.git
+[submodule "bookstore-prep"]
+	path = bookstore-prep
+	url = https://github.com/SuzukiRyuichiro/bookstore-prep.git
