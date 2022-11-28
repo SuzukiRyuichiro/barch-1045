@@ -1,5 +1,5 @@
 [submodule "rails-action-cable-chat"]
-	path = rails-action-cable-chat-prep
+	path = rails-action-cable-chat
 	url = https://github.com/SuzukiRyuichiro/rails-action-cable-chat.git
 [submodule "from-design-to-code-prep"]
 	path = from-design-to-code-prep
