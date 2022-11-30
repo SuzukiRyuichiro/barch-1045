@@ -13,3 +13,6 @@
 [submodule "bookstore-prep"]
 	path = bookstore-prep
 	url = https://github.com/SuzukiRyuichiro/bookstore-prep.git
+[submodule "contribution-mailer"]
+	path = contribution-mailer
+	url = //github.com/SuzukiRyuichiro/rails-background-jobs.git
